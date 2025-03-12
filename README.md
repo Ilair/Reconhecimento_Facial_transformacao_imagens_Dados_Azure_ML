@@ -1,35 +1,46 @@
-# Reconhecimento Facial e Transformação de Imagens em Dados no Azure ML
+# Reconhecimento-Facial-e-transformacao-de-imagens-em-Dados-no-Azure-ML
+***Desafio 2 do Bootcamp Azure Fundamentals AI 900 da DIO***
 
-***Desafio 2 do Bootcamp Azure Fundamentals AI-900 da DIO***
+<br> 
+O teste inicial tem a finalidade de testar os recursos do Estúdio de Visão da IA do Azure e para criar um recurso é necessário entrar no portal da Azure e clicar em <b>IA + Machine Learning</b>, em seguida, é só escolher a opção <b>Serviços Cognitivos</b> (se a página estiver em português) ou <b>Azure AI Services</b> (se a página estiver em inglês), para então clicar em <b>Criar(Criate)</b>.<br>
 
-O objetivo deste desafio é explorar os recursos do Estúdio de Visão da IA do Azure. Para começar, é necessário acessar o portal do Azure, clicar em **IA + Machine Learning** e, em seguida, escolher a opção **Serviços Cognitivos** (caso a página esteja em português) ou **Azure AI Services** (se estiver em inglês). Depois, basta clicar em **Criar**.
+<b><i>OBS:</i></b> Esse procedimento fará uma ponte do serviço de inteligência artificial na assinatura do Azure para o Visual Studio (Estúdio de Visão).<br>
+<br>
+A subscrição já vem preenchida e não há necessidade de alterar, então basta escolher(caso já tenha feito) ou criar(caso ainda precise criar) o <b>Resource Group (Grupo de recursos)</b>, depois é só escolher a região e um nome de sua preferência. Em seguida, ir em <b>Pricing tier (Tipo de preço)</b> e selecionar <b>Standard S0</b>, para então ticar a caixinha confirmando que leu e compreendeu os termos de aviso de responsabilidade da IA, para então <b>Examinar + criar (Review + create)</b> para que o recurso seja criado.<br>
+<br>
+Findada essa primeira parte, é necessário acessar o portal de visão ([portal.vision.cognitive.azure.com/gallery/featured](url)) e selecionar o recurso que acabou de criar. Após selecionar, fechar no x no canto superior direito da tela, o que o fará voltar à tela inicial para que então, escolha o estúdio em que vai trabalhar. <br>
+Neste recurso, o primeiro teste foi feito com detecção de face, foi clicado em <b>Face</b> e foi possível enviar as imagens anexadas no arquivo inputs, nas quais a IA conseguiu identificar o atributo da imagem e já trazer o código JSON, descrevendo as imagens e mostrando o código.<br>
+<br>
 
-**OBS:** Esse procedimento irá conectar o serviço de inteligência artificial à sua assinatura do Azure e ao Visual Studio (Estúdio de Visão).
+![teste face homem](https://github.com/Ilair/Reconhecimento_Facial_transformacao_imagens_Dados_Azure_ML/blob/main/FaceHomem.png?raw=true)
 
-O processo de criação é simples. Não há necessidade de alterar a subscrição, pois ela já vem preenchida. Escolha ou crie um **Resource Group (Grupo de recursos)**, selecione a região e atribua um nome de sua preferência. Em seguida, vá até **Pricing tier (Tipo de preço)** e escolha **Standard S0**. Por fim, marque a caixinha confirmando que leu e compreendeu os termos de responsabilidade da IA e clique em **Examinar + criar (Review + create)** para concluir a criação do recurso.
+<br>
+A segunda parte do teste, analisou textos presentes em imagens, identificando as palavras e dando o código JSON. Tal funcionalidade, permite analisar documentos através do reconhecimentos de caracteres, que extrai das imagens tudo que é texto, independente se é letra escrita à mão ou impressa. Para fazer esse teste, basta ir em <b>Optical character recognition</b> e enviar a foto que quer analisar.<br>
+<br>
 
-Após essa etapa, acesse o portal de visão ([portal.vision.cognitive.azure.com/gallery/featured](url)) e selecione o recurso criado. Depois de selecionar o recurso, clique no "X" no canto superior direito para voltar à tela inicial e escolher o estúdio para trabalhar.
+![teste palavra em foto2](https://github.com/Ilair/Reconhecimento_Facial_transformacao_imagens_Dados_Azure_ML/blob/main/TetePalavra.png?raw=true)
 
-### Primeira Parte: Detecção Facial
+<br>
 
-O primeiro teste foi realizado com a detecção de faces. Foi necessário clicar em **Face** e enviar as imagens anexadas no arquivo de entrada. A IA conseguiu identificar as características das imagens e retornar um código JSON com a descrição das imagens.
+<br>
+A terceira parte, por sua vez, se deu com a análise de imagens, tendo cenários identificados. Para realizar o teste, basta voltar a página inicial do vision studio, clicar em <b>Image analysis</b>, em seguida, em Add captions to images, para então enviar a foto que deseja analisar e receber a análise, junto com o código JSON.
+<br>
 
-![teste face homem](https://example.com/face-image.jpg)
+![analise de cenario2](https://github.com/Ilair/Reconhecimento_Facial_transformacao_imagens_Dados_Azure_ML/blob/main/AnaliseCenario.jpg?raw=true)
 
-### Segunda Parte: Reconhecimento de Texto em Imagens
 
-A segunda parte envolveu a análise de textos presentes em imagens, identificando as palavras e gerando o código JSON correspondente. Essa funcionalidade permite analisar documentos por meio do reconhecimento de caracteres, extraindo qualquer texto das imagens, seja manuscrito ou impresso. Para realizar esse teste, basta acessar **Optical character recognition** e enviar a foto para análise.
+<br>
+<h2>Liks Importantes:</h2>
 
-![teste palavra em foto](https://example.com/ocr-image.jpg)
+<br>
 
-### Terceira Parte: Análise de Imagens e Identificação de Cenários
+[https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/04-face.html](url)
 
-A terceira parte do teste foi dedicada à análise de imagens, onde cenários específicos foram identificados. Para realizar esse teste, basta acessar a página inicial do Vision Studio, clicar em **Image analysis**, depois em **Add captions to images**, e enviar a foto que deseja analisar. O código JSON será gerado com a descrição da imagem.
+<br> 
 
-![analise de cenario](https://example.com/image-analysis.jpg)
+[https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/05-ocr.html
+](url)
 
-## Links Importantes:
+<br> 
 
-- [Lab 04 - Face Detection](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/04-face.html)
-- [Lab 05 - Optical Character Recognition](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/05-ocr.html)
-- [Lab 03 - Image Analysis](https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/03-image-analysis.html)
+[https://microsoftlearning.github.io/mslearn-ai-fundamentals/Instructions/Labs/03-image-analysis.html](url)
