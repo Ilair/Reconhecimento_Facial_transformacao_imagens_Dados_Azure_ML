@@ -1,6 +1,4 @@
 # Reconhecimento-Facial-e-transformacao-de-imagens-em-Dados-no-Azure-ML
-***Desafio 2 do Bootcamp Azure Fundamentals AI 900 da DIO***
-
 <br> 
 O teste inicial tem a finalidade de testar os recursos do Estúdio de Visão da IA do Azure e para criar um recurso é necessário entrar no portal da Azure e clicar em <b>IA + Machine Learning</b>, em seguida, é só escolher a opção <b>Serviços Cognitivos</b> (se a página estiver em português) ou <b>Azure AI Services</b> (se a página estiver em inglês), para então clicar em <b>Criar(Criate)</b>.<br>
 
